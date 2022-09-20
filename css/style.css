@@ -472,4 +472,16 @@ main{
   .card{
     height: 35rem;
   }
+
+  .men {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-bottom: 20rem;
+  }
+
+  .principal {
+    margin-top: 15rem;
+  }
+
 }
