@@ -1,307 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/p" type="image/x-icon" />
 
-<body>
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <main>
-    <div class="men">
-      <nav class="menu">
-      <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="/" class="flex items-center">
-          <img src="img/bx-code-alt.svg" class="" alt="Flowbite Logo">
-          <span>Uriel Rdguez</span>
-        </a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-          <ul
-            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#"
-                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white texto"
-                aria-current="page">Inicio</a>
-            </li>
-            <li>
-              <a href="#soy"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent texto2">Acerca de mí</a>
-            </li>
-            <li>
-              <a href="#tencologiasD"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent texto2">Tecnologías</a>
-            </li>
-            <li>
-              <a href="#portafolio"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent texto2">Portafolio</a>
-            </li>
-            <li>
-              <a href="#contacto"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent texto2">Contacto</a>
-            </li>
+    <title>Mini portfolio website - Bedimcode</title>
+  </head>
+  <body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+      <!-- theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
 
+
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img src="assets/img/mypp.png" alt="">
+            </div>
+          </div>
+
+          <h2 class="profile__name">Uriel Rodriguez</h2>
+          <h3 class="profile__profession">Desarrollador Web Jr</h3>
+
+          <ul class="profile__social">
+            <a href="https://www.linkedin.com/in/urielrdguez/" target="_blank" class="profile__social-link">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/UrielCode" target="_blank" class="profile__social-link">
+              <i class="ri-github-line"></i>
+            </a>
           </ul>
-        </div>
-      </div>
-    </nav>
-    </div>
 
-    <section class="head">
-      <div class="principal">
-        <div class="princ">
-          <h1 class="title" id="soy">Hola</h1>
-          <p class="text">Soy <span class="nombre">Uriel, </span> <span class="ur">Desarrolador Web Jr.</span> </p>
-          <div>
-            <h3 class="soy">Acerca de mí</h3>
-            <p class="descripcion">Ingeniero en Tecnologías de la Información y Comunicaciones, he desarrollado toda mi carrera dedicado al mundo de la ingeniería de sistemas.</p>
-          </div>
-
-          <a class="cv" href="/assets/ur.pdf" target="_blank" download="/assets/ur.pdf">Descarga CV</a>
         </div>
 
-        <div class="photo">
-          <img class="myphoto" src="img/mypp.png" alt="">
+        <div class="profile__info grid">
+
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">1</h3>
+            <p class="profile__info-description">Año de <br> freelancer  </p>
+          </div>
+
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+5</h3>
+            <p class="profile__info-description">Proyectos <br> terminados</p>
+          </div>
+
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">2</h3>
+            <p class="profile__info-description">Clientes <br> satisfechos</p>
+          </div>
+
         </div>
-      </div>
-    </section>
 
-    <section class="tecno" >
-      <h2 class="titles" id="tencologiasD">Tecnologías que domino</h2>
-      <div class="tec">
-        <img class="ic" src="img/html.svg" alt="">
-        <img class="ic" src="img/css.svg" alt="">
-        <img class="ic" src="img/sass.svg" alt="">
-        <img class="ic" src="img/bxl-bootstrap.svg" alt="">
-        <img class="ic" src="img/js.svg" alt="">
-        <img class="ic" src="img/bxl-git.svg" alt="">
-        <img class="ic" src="img/bxl-github.svg" alt="">
-      </div>
+        <div class="profile__buttons">
+          <a download="assets/pdf/ur.pdf" href="" class="button">Descargar 
+            <i class="ri-download-line"></i> 
+          </a>
 
-      <h2 class="titl" >Tecnologías de interes</h2>
-      <div class="tec">
-        <img class="ic" src="img/bxl-react.svg" alt="">
-        <img class="ic" src="img/bxs-terminal.svg" alt="">
-        <img class="ic" src="img/bxs-data.svg" alt="">
-        <img class="ic" src="img/bxl-mongodb.svg" alt="">
-      </div>
-    </section>
-
-    <header class="pfl">
-      <section class="portafolio">
-        <h2 class="tittle" id="portafolio">Mi Portafolio</h2>
-
-
-        <div class="cards">
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bx-headphone.svg" alt="">
-              </div>
-
-              <div class="card-back">
-                <h2 class="title">Tienda de audifonos</h2>
-                <p>Simulación de una tienda de audifonos, adaptable a dispositivos moviles, con imagenes de tipo avif y
-                  webp.</p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                  <img src="img/bxl-javascript.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/tienda-audifonos/" target="_blank" class="demo">Ver demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bx-cabinet.svg" alt="">
-              </div>
-              <div class="card-back">
-                <h2 class="title">Tienda de muebles</h2>
-                <p>Simulación de una tienda de muebles adaptable a dispositivos moviles.</p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/proyecto-tienda/" target="_blank" class="demo">Ver demo</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bx-coffee-togo.svg" alt="">
-              </div>
-              <div class="card-back">
-                <h2 class="title">Cafetería</h2>
-                <p>Simulación de una cafetería adaptable a dispositivos moviles, con imagenes de tipo avif y webp.</p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                  <img src="img/bxl-sass.svg" alt="">
-                  <img src="img/bxl-javascript.svg" alt="">
-                  <img src="img/bxs-file-json.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/pagina-cafeteria/" target="_blank" class="demo">Ver demo</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bxl-twitter.svg" alt="">
-              </div>
-              <div class="card-back">
-                <h2 class="title">Simulación de envió de tweets</h2>
-                <p>Simulación de envió de tweets con local storage.</p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                  <img src="img/bxl-javascript.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/tweets-local-storage/" class="demo">Ver demo</a>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bx-envelope.svg" alt="">
-              </div>
-              <div class="card-back">
-                <h2 class="title">Simulador de envios de correos</h2>
-                <p>Simulaodr para enviar correos.</p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                  <img src="img/bxl-javascript.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/simulador-envio-correos/" class="demo">Ver demo</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="img/bx-cart.svg" alt="">
-              </div>
-              <div class="card-back">
-                <h2 class="title">Tienda con carrito de compras</h2>
-                <p>Simulador de una tienda donde se pueden agregar productos al carrito de compras con local storage.
-                </p>
-                <h2 class="title">Tecnologías</h2>
-                <div class="icons">
-                  <img src="img/bxl-html5.svg" alt="">
-                  <img src="img/bxl-css3.svg" alt="">
-                  <img src="img/bxl-javascript.svg" alt="">
-                </div>
-                <a href="https://urielcode.github.io/tienda-carrito/" class="demo">Ver demo</a>
-              </div>
-            </div>
+          <div class="profile__buttons-small">
+            <a href="https://api.whatsapp.com/send?phone=525544813096&text=Hola, enviame un mensaje y con gusto te atenderé" target="_blank" class="button button__small button__gray">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <a href="https://www.facebook.com/UrielRdguezRuiz" target="_blank" class="button button__small button__gray">
+              <i class="ri-messenger-line"></i>
+            </a>
           </div>
         </div>
 
+      </div>
     </header>
 
-    </section>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
 
-  </main>
+        <ul class="filters__content">
+          <button class="filters__button filter-tab-active" data-target="#proyectos">
+            Proyectos
+          </button>
+
+          <button class="filters__button" data-target="#skills">
+            Skills
+          </button>
+        </ul>
 
 
-  <footer class="footer" id="contacto">
-    <h2 class="title">Ponte en contacto conmigo</h2>
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
 
-    <div class="contacto">
+          <div class="projects__content grid filters__active" data-content id="proyectos">
 
-      <div>
-        <div class="contact">
-          <p>
-            <span>
-              <box-icon class="p-cont" name='envelope' color='#ffc107'>
-              </box-icon>
-            </span>
-          </p>
-          <a href="mailto:uriel.rdguez@gmail.com" class="p-c2"><span>Correo electrónico:</span>
-            uriel.rdguez@gmail.com</a>
+            <article class="projects__card">
+              <img src="assets/img/audif.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS |JAVASCRIPT</span>
+                  <h3 class="projects__title">Tienda de audifonos</h3>
+                  <a href="https://urielcode.github.io/tienda-audifonos/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-link"></i>
+                  </a>
+                
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/muebles.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS</span>
+                  <h3 class="projects__title">Tienda de muebles</h3>
+                  <a href="https://urielcode.github.io/proyecto-tienda/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/cafe.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS | SASS | JAVASCRIPT | JSON </span>
+                  <h3 class="projects__title">Cafetería</h3>
+                  <a href="https://urielcode.github.io/pagina-cafeteria/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/twittersvg.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS | JAVASCRIPT</span>
+                  <h3 class="projects__title">Simulación de envió de tweets</h3>
+                  <a href="https://urielcode.github.io/tweets-local-storage/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/email.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS | JAVASCRIPT</span>
+                  <h3 class="projects__title">Simulador de envios de correos</h3>
+                  <a href="https://urielcode.github.io/simulador-envio-correos/" class="projects__button button button__small" target="_blank"> 
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/compras.jpg" alt="" class="projects__img">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML | CSS | JAVASCRIPT</span>
+                  <h3 class="projects__title">Tienda con carrito de compras</h3>
+                  <a href="https://urielcode.github.io/simulador-envio-correos/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+          </div>
+
+          <!--=============== SKILLS ===============-->
+          <div class="skills__content grid" data-content id="skills">
+
+            <div class="skill__area">
+              <h3 class="skills__title">Fronted</h3>
+
+              <div class="skills__box">
+
+                <div class="skills_group">
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">HTML</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">CSS</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">JavaScript</h3>
+                      <span class="skills__level">Intermedio</span>
+                      <span class="skills__level"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="skills_group">
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">React</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Bootstrap</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Git</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="skill__area">
+              <h3 class="skills__title">Base de Datos</h3>
+
+              <div class="skills__box">
+
+                <div class="skills_group">
+                  
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">MySQL</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                
+              </div>
+            </div>
+
+
+          </div>
+
+          
         </div>
-      </div>
+      </section>
+    </main>
 
-      <div class="contact">
-        <p>
-          <span>
-            <box-icon class="p-cont" name='phone' color='#ffc107'></box-icon>
-          </span>
-        </p>
-        <p class="p-c2"><span>Teléfono:</span> 5544813096</p>
-      </div>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <span class="footer__copy">
+        &#169; Uriel Rdguez. Todos los derechos resrvados 2022
+      </span>
+    </footer>
 
-      <div>
-        <div class="contact">
-          <a href="https://www.linkedin.com/in/urielrdguez/" target="_blank"><span>
-              <box-icon class="p-cont" name='linkedin' type='logo' color='#ffc107'></box-icon>
-            </span> </a>
-          <p class="p-c2"><span>Linkedin</span></p>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-        </div>
-      </div>
-
-      <div>
-        <div class="contact">
-
-          <a href="https://www.linkedin.com/in/urielrdguez/" target="_blank"><span>
-              <box-icon class="p-cont" name='github' type='logo' color='#ffc107'></box-icon>
-            </span> </a>
-          <p class="p-c2"><span>Github</span></p>
-
-        </div>
-
-      </div>
-      <p>© 2022 Uriel Rdguez Ruiz</p>
-
-
-  </footer>
-
-
-
-
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-</body>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    
+  </body>
 </html>
